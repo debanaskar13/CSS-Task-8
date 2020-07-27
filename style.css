@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+  background-color: rgba(0, 0, 0, 0.767);
+}
+.container{
+    margin: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    
+}
+.box{
+    width: 20.99999%;
+    height: auto;
+    flex-grow: 1;
+    margin: 15px 7px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+a{
+  text-decoration: none;
+}
+.text{
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.24);
+  color: white;
+  position: absolute;
+  top: 7%;
+  width: 23.5%;
+  text-align: center;
+  
+}
+@keyframes animation1{
+  0%{
+    height: 0%;
+    
+  }
+  100%{
+    height: 5%;
+    
+  }
+}
+.box:hover .text{
+  visibility: visible;
+  animation: animation1 200ms ease-in-out forwards;
+}
+
+@media only screen and (max-width: 1100px) {
+    .box {
+      width: 24.99999%;
+      margin: 15px 7px;
+    }
+    .text{
+      width: 30.7%;
+    }
+  }
+@media only screen and (max-width: 900px) {
+    .box {
+      width: 47.99999%;
+      margin: 15px 7px;
+    }
+    .text{
+      width: 46%;
+    }
+  }
+@media only screen and (min-width:600px) and (max-width: 756px) {
+    .text{
+      width: 89%;
+    }
+  }
+@media only screen and (max-width: 600px) {
+    .box {
+      width: 100%;
+      margin: 15px 7px;
+    }
+    .text{
+      width: 89%;
+      top: 6.9%;
+    }
+  }
+
+
+  
